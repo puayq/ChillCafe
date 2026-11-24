@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 1. Makes the page fit phone screens. Without it, nothing is responsive. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChiLLCafé | Home</title>
+
+    <!-- 2. Bootstrap CSS: must come BEFORE our own CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- 3. Our own CSS: comes AFTER, so our styles can override Bootstrap -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">ChiLLCafé</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Menu</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="menu-food.html">Food</a></li>
+                            <li><a class="dropdown-item" href="menu-drinks.html">Drinks</a></li>
+                            <li><a class="dropdown-item" href="menu-dessert.html">Dessert</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Team</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-body-tertiary py-5">
+        <div class="container py-lg-4">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8 text-center">
+                    <p class="text-uppercase small fw-semibold text-body-secondary mb-2">ChiLLCafé · Kuala Lumpur</p>
+                    <h1 class="display-5 fw-bold mb-3">Text or Call Us !!!</h1>
+                    <p class="lead mb-4">011-123 4567 or 012-246 4683</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <a href="menu-drinks.html" class="btn btn-dark btn-lg px-4">Call Us</a>
+                        <a href="contact.html" class="btn btn-outline-dark btn-lg px-4">Text</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main class="container my-5">
+        <!-- 3a. OUR STORY: image and text side by side -->
+        <div class="row g-4 g-lg-5 align-items-center mb-5">
+            <div class="col-12 col-lg-6">
+                <img src="images/roaster.jpg" class="img-fluid rounded"
+                    alt="Coffee beans turning in a charcoal roaster">
+
+            </div>
+            <div class="col-12 col-lg-6">
+                <h2 class="h3">Our story</h2>
+                <p>Kopi Kampung started as a small stall in Ipoh Old Town. Today the same family
+                    still roasts the beans over charcoal every morning and serves them with kaya toast
+                    made in the shop.</p>
+                <p class="text-body-secondary mb-0">A fictional brand used as a class example.</p>
+            </div>
+        </div>
+        <h2 class="text-center mb-4">
+            Why people keep coming back
+        </h2>
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="p-4 bg-light border rounded h-100">
+                    <h3 class="h5">Delicious Food and Drinks</h3>
+                    <p>Offers delicious food and drinks that attract customers.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="p-4 bg-light border rounded h-100">
+                    <h2 class="h5">Comfortable Environment</h2>
+                    <p>Provides a relaxing atmosphere where people can chat, study, or spend time with friends.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4">
+                <div class="p-4 bg-light border rounded h-100">
+                    <h2 class="h5">Beautiful Interior Design</h2>
+                    <p>Features beautiful and unique decorations that make people want to visit and take photos.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <small>&copy; 2027 ChiLLCafé</small>
+        </div>
+    </footer>
+
+    <!-- 4. Bootstrap JavaScript: at the end of body -->
+    <script src="js/bootstrap.bundle.min.js"></script&gt;
+<!-- 5. Our own JavaScript -->
+<script src="js/script.js"></script>
+</body>
+
+</html>

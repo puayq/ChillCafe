@@ -1,0 +1,85 @@
+:root {
+    --test-colour: #d49999;
+
+    /* 1. MY BRAND: the values from my style tile */
+
+    --brand-espresso: #21332d;
+    /* navbar, footer, headings */
+    --brand-cream: #cbf4c9;
+    /* page background */
+    --brand-charcoal: #a05256;
+    /* body text */
+    --brand-orange: #632c0c;
+    /* buttons */
+    --font-heading: "Agrave Pro", Georgia, serif;
+    --font-body: "Agrave Pro", Arial, sans-serif;
+    --brand-radius: 8px;
+    /* rounded corners */
+
+
+    /* 2. BOOTSTRAP: use my brand */
+
+    --bs-body-bg: var(--brand-cream);
+    --bs-body-color: var(--brand-charcoal);
+    --bs-body-font-family: var(--font-body);
+    --bs-body-font-size: 1rem;
+    --bs-body-line-height: 1.6;
+    --bs-heading-color: var(--brand-espresso);
+    --bs-border-radius: var(--brand-radius);
+
+    --bs-border-radius: var(--brand-radius);
+    --bs-dark-rgb: 59, 42, 26;
+    --bs-light-rgb: 255, 255, 255;
+    --bs-tertiary-bg-rgb: 255, 255, 255;
+}
+
+/* 3. HEADINGS: my heading font */
+h1,
+h2{
+    font-family: var(--font-heading);
+    color: var(--test-colour);
+}
+
+.navbar-brand{
+    font-family: var(--font-heading);
+    color: var(--brand-cream);
+}
+
+body {
+    border-top: 12px solid var(--test-colour);
+}
+
+/* 4. DARK PARTS (the navbar): the Menu dropdown too */
+[data-bs-theme="dark"] {
+    --bs-body-bg: var(--brand-espresso);
+}
+
+/* 5. BUTTONS: my button colour */
+.btn-primary {
+    --bs-btn-bg: var(--brand-orange);
+    --bs-btn-border-color: var(--brand-orange);
+    --bs-btn-hover-bg: var(--brand-espresso);
+    --bs-btn-hover-border-color: var(--brand-espresso);
+    --bs-btn-active-bg: var(--brand-espresso);
+    --bs-btn-active-border-color: var(--brand-espresso);
+}
+
+.btn-outline-primary {
+    --bs-btn-color: var(--brand-orange);
+    --bs-btn-border-color: var(--brand-orange);
+    --bs-btn-hover-bg: var(--brand-orange);
+    --bs-btn-hover-border-color: var(--brand-orange);
+    --bs-btn-active-bg: var(--brand-espresso);
+    --bs-btn-active-border-color: var(--brand-espresso);
+}
+
+/* 6. SPACING: my spacing */
+.container {
+    --bs-gutter-x: 1rem;
+    /* page sides: 24 px each */
+}
+
+.navbar {
+    --bs-navbar-padding-y: 1rem;
+    /* navbar: 16 px top and bottom */
+}
